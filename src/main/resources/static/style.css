@@ -1,0 +1,402 @@
+/* ===========================
+   GLOBAL
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#1f2937;
+}
+
+/* ===========================
+   LAYOUT
+=========================== */
+
+.wrapper{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar{
+    width:250px;
+    background:#1e293b;
+    color:#fff;
+    padding:25px;
+    position:fixed;
+    height:100vh;
+    overflow:auto;
+}
+
+.logo{
+    font-size:26px;
+    font-weight:700;
+    margin-bottom:40px;
+    text-align:center;
+}
+
+.menu{
+    list-style:none;
+    padding:0;
+}
+
+.menu li{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:14px 18px;
+    margin-bottom:12px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.3s;
+    font-size:16px;
+}
+
+.menu li i{
+    font-size:20px;
+}
+
+.menu li:hover,
+.menu .active{
+    background:#2563eb;
+}
+
+/* ===========================
+   MAIN CONTENT
+=========================== */
+
+.main{
+    margin-left:250px;
+    flex:1;
+    padding:30px;
+}
+
+/* ===========================
+   TOPBAR
+=========================== */
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.profile{
+    background:#fff;
+    padding:10px 20px;
+    border-radius:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    font-weight:500;
+}
+
+.profile i{
+    margin-right:8px;
+    color:#2563eb;
+}
+
+/* ===========================
+   DASHBOARD CARDS
+=========================== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.stat{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border:none;
+    border-radius:18px;
+    padding:25px;
+    color:#fff;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.stat:hover{
+    transform:translateY(-5px);
+}
+
+.stat h6{
+    font-size:15px;
+    opacity:.9;
+}
+
+.stat h2{
+    font-size:34px;
+    margin-top:10px;
+    font-weight:700;
+}
+
+.stat-icon{
+    font-size:48px;
+    opacity:.85;
+}
+
+/* Card Colors */
+
+.expense-card{
+    background:linear-gradient(135deg,#3b82f6,#2563eb);
+}
+
+.amount-card{
+    background:linear-gradient(135deg,#10b981,#059669);
+}
+
+.today-card{
+    background:linear-gradient(135deg,#06b6d4,#0891b2);
+}
+
+.month-card{
+    background:linear-gradient(135deg,#8b5cf6,#7c3aed);
+}
+
+/* ===========================
+   FORM CARD
+=========================== */
+
+.form-card,
+.table-card{
+    border:none;
+    border-radius:18px;
+    background:#fff;
+    padding:25px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    margin-bottom:30px;
+}
+
+.card-header-custom{
+    margin-bottom:25px;
+}
+
+.card-header-custom h4{
+    margin:0;
+    font-weight:600;
+}
+
+/* ===========================
+   FORM
+=========================== */
+
+.form-label{
+    font-weight:500;
+    margin-bottom:8px;
+}
+
+.form-control,
+.form-select{
+    height:50px;
+    border-radius:10px;
+    border:1px solid #d1d5db;
+}
+
+.form-control:focus,
+.form-select:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 .2rem rgba(37,99,235,.15);
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn-primary{
+    height:50px;
+    border-radius:10px;
+    font-weight:600;
+    border:none;
+    transition:.3s;
+}
+
+.btn-primary:hover{
+    transform:translateY(-2px);
+}
+
+/* ===========================
+   TABLE
+=========================== */
+
+.table-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.table-header input{
+    width:260px;
+}
+
+.table{
+    margin-bottom:0;
+}
+
+.table thead th{
+    background:#2563eb !important;
+    color:#fff;
+    border:none;
+    padding:15px;
+}
+
+.table tbody td{
+    padding:15px;
+    vertical-align:middle;
+}
+
+.table tbody tr{
+    transition:.2s;
+}
+
+.table tbody tr:hover{
+    background:#eef5ff;
+}
+
+/* ===========================
+   BADGES
+=========================== */
+
+.badge{
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:13px;
+}
+
+/* ===========================
+   ACTION BUTTONS
+=========================== */
+
+.btn-sm{
+    border-radius:8px;
+    padding:6px 12px;
+}
+
+/* ===========================
+   CHART
+=========================== */
+
+.chart-container{
+    width:100%;
+    height:400px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+canvas{
+    max-width:700px;
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#cbd5e1;
+    border-radius:10px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+    .sidebar{
+        position:relative;
+        width:100%;
+        height:auto;
+    }
+
+    .main{
+        margin-left:0;
+    }
+
+    .wrapper{
+        flex-direction:column;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .topbar{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+
+    .table-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+
+    .table-header input{
+        width:100%;
+    }
+}
+/* ===========================
+   PAGE NAVIGATION
+=========================== */
+
+.content-section{
+    display:none;
+    animation:fadeIn .3s ease-in-out;
+}
+
+.content-section.active-section{
+    display:block;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Active Sidebar Menu */
+
+.menu li.active{
+    background:#2563eb;
+    color:#fff;
+}
+
+.menu li:hover{
+    background:#2563eb;
+}
+.insights-container{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    margin-top:20px;
+}
+
+.insight-card{
+    background:#f8f9fa;
+    border-left:5px solid #0d6efd;
+    padding:15px;
+    border-radius:8px;
+    font-size:16px;
+}
