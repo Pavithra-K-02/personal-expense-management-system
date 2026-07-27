@@ -87,6 +87,15 @@ CREATE DATABASE expense_tracker;
 ```text
 http://localhost:8081/index.html
 ```
+## Screenshots
+<img width="1899" height="940" alt="image" src="https://github.com/user-attachments/assets/63ecad93-9984-4831-b4a5-85ea8140d0a2" />
+<img width="1896" height="936" alt="image" src="https://github.com/user-attachments/assets/9df2062d-3ef5-4170-a2a3-d2c8c7af3e9c" />
+<img width="1900" height="933" alt="image" src="https://github.com/user-attachments/assets/49375a89-092e-46e5-b941-14e8a184dd3e" />
+<img width="1902" height="974" alt="image" src="https://github.com/user-attachments/assets/f0935a4d-48bc-42a5-b24f-544911d16728" />
+<img width="1858" height="802" alt="image" src="https://github.com/user-attachments/assets/7e4f321e-70ea-4a96-bef6-f4ef91da6330" />
+<img width="1919" height="916" alt="image" src="https://github.com/user-attachments/assets/4ddf140e-8605-4075-9da4-4dc7eb93c872" />
+
+
 
 ---
 
